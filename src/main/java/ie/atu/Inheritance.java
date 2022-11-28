@@ -3,14 +3,11 @@ package ie.atu;
 public class Inheritance {
     public static void main(String[] args) {
 
-        Person person1 = new Person();
-        person1.setName("Jack");
-        person1.setAddress("Galway");
-        person1.setTelephone("085420");
+        Person person1 = new Person("Cillian", "Barna", "083690");
 
-        System.out.println("Persons name is: " + person1.getName());
-        System.out.println("Persons address is: " + person1.getAddress());
-        System.out.println("Persons telephone is: " + person1.getTelephone());
+        Customer customer1 = new Customer("Gavin", "Moycullen", "085420", "11111", true);
 
+        System.out.println("Here are the person's details: \n" + person1.toString());
+        System.out.println("Here are customer's details: \n" + customer1.toString());
     }
 }
